@@ -134,14 +134,15 @@ int addToBoard(char c , int index, int five ,char board[6][7],int posI[42], int 
 }
 void printBoard(char board[6][7]){
   for (size_t i = 0; i < 6; i++) {
+    printf("|");
     for (size_t j = 0; j < 7; j++) {
-      printf(" | %c | ",board[i][j]);
+      printf(" %c |",board[i][j]);
     }
     printf("\n");
   }
   char line[]= {'1','2','3','4','5','6','7'};
   for (size_t i = 0; i < 7; i++) {
-  printf("   %c   ",line[i]);
+  printf("  %c ",line[i]);
   }
   printf("\n");
 }
